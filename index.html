@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Kitchen - Authentic Nepali Taste in Dwarka, Delhi</title>
-    <meta name="description" content="Experience the heart of Nepal at Family Kitchen. Order online, chat with our AI assistant, or view our delicious menu of authentic Nepali & Asian flavours.">
+    <title>Family Kitchen - Authentic Nepali & Asian Cuisine in Dwarka</title>
+    <meta name="description" content="Discover authentic Nepali and Asian flavours at Family Kitchen. Modern dining, online ordering, and an AI assistant to help you choose your perfect meal.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="container header-container">
-            <div class="logo">
-                <a href="#"><img src="Logos/logowatermark.png" alt="Family Kitchen Logo"></a>
-            </div>
+            <a href="#" class="logo">
+                <img src="Logos/logowatermark.png" alt="Family Kitchen Logo">
+            </a>
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -24,10 +24,10 @@
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="tel:+919773634654" class="btn btn-primary nav-call-btn">Call Now</a></li>
                 </ul>
+                <a href="tel:+919773634654" class="btn btn-primary nav-call-btn-desktop">Call Now</a>
             </nav>
-            <button class="hamburger-menu">
+            <button class="hamburger-menu" aria-label="Open Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -37,49 +37,46 @@
 
     <main>
         <section id="home" class="hero-section">
-            <div class="container">
-                <h1>Delicious Nepali & Asian Flavours</h1>
-                <p class="hero-subtitle">Served fresh from our kitchen to your table.</p>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Taste of the Himalayas, Heart of Delhi</h1>
+                <p class="hero-subtitle">Authentic Nepali & Asian cuisine that tells a story in every bite.</p>
                 <div class="button-group">
                     <a href="https://chatgpt.com/g/g-685cd4ab873c819184640f4f95c123ff-family-kitchen-bot" target="_blank" class="btn btn-secondary">
-                        ✨ Chat with AI Helper
+                        <span class="icon">✨</span> Chat with AI Helper
                     </a>
-                    <a href="#menu" class="btn btn-primary">View Our Menu</a>
+                    <a href="#menu" class="btn btn-primary">View Full Menu</a>
                 </div>
             </div>
         </section>
 
         <section id="menu" class="menu-section">
             <div class="container">
-                <h2>Our Menu</h2>
+                <h2>Our Signature Dishes</h2>
                 <div class="grid-layout">
                     <div class="card">
-                        <img src="images/starter1.png" alt="Starters Menu">
-                        <p class="card-caption">Starters</p>
+                        <div class="card-image-container">
+                            <img src="images/starter1.png" alt="Starters Menu">
+                        </div>
+                        <h3>Starters</h3>
                     </div>
                     <div class="card">
-                        <img src="Menu/vegmenu7.png" alt="Vegetarian Menu">
-                        <p class="card-caption">Veg Menu</p>
+                         <div class="card-image-container">
+                            <img src="Menu/vegmenu7.png" alt="Vegetarian Menu">
+                        </div>
+                        <h3>Veg Mains</h3>
                     </div>
                     <div class="card">
-                        <img src="Menu/paneermenu6.png" alt="Paneer Menu">
-                        <p class="card-caption">Paneer Menu</p>
+                         <div class="card-image-container">
+                            <img src="Menu/chieckenmenu2.png" alt="Chicken Menu">
+                        </div>
+                        <h3>Chicken Specials</h3>
                     </div>
                     <div class="card">
-                        <img src="Menu/eggmenu5.png" alt="Egg Menu">
-                        <p class="card-caption">Egg Menu</p>
-                    </div>
-                    <div class="card">
-                        <img src="Menu/chieckenmenu2.png" alt="Chicken Menu">
-                        <p class="card-caption">Chicken Menu</p>
-                    </div>
-                    <div class="card">
-                        <img src="Menu/buffmenu4.png" alt="Buff Menu">
-                        <p class="card-caption">Buff Menu</p>
-                    </div>
-                    <div class="card">
-                        <img src="Menu/porkmenu3.png" alt="Pork Menu">
-                        <p class="card-caption">Pork Menu</p>
+                         <div class="card-image-container">
+                           <img src="Menu/porkmenu3.png" alt="Pork Menu">
+                        </div>
+                        <h3>Pork Delicacies</h3>
                     </div>
                 </div>
             </div>
@@ -87,39 +84,36 @@
 
         <section id="gallery" class="gallery-section">
             <div class="container">
-                <h2>Gallery</h2>
-                <p>A glimpse of our delicious food and cozy vibes.</p>
-                <div class="grid-layout">
-                    <img src="images/food0.png" alt="Photo of our delicious momos" class="card">
-                    <img src="images/ambiance.png" alt="Ambiance of the restaurant" class="card">
-                    <img src="images/food2.png" alt="Photo of Thukpa" class="card">
-                    <img src="images/anothercustomerreview.png" alt="Happy customers" class="card">
+                <h2>A Glimpse of Our Kitchen</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="images/food0.png" alt="Photo of our delicious momos"></div>
+                    <div class="gallery-item"><img src="images/ambiance.png" alt="Ambiance of the restaurant"></div>
+                    <div class="gallery-item"><img src="images/food2.png" alt="Photo of a Nepali food platter"></div>
+                    <div class="gallery-item"><img src="images/anothercustomerreview.png" alt="Happy customers at Family Kitchen"></div>
                 </div>
             </div>
         </section>
         
         <section id="reviews" class="reviews-section">
             <div class="container">
-                <h2>What Our Customers Say</h2>
-                <div class="grid-layout">
-                    <img src="images/CustomerReview.png" alt="Customer review screenshot" class="card">
-                    <img src="images/CustomerReview(3).png" alt="Another customer review" class="card">
+                <h2>From Our Customers</h2>
+                <div class="grid-layout review-grid">
+                    <img src="images/CustomerReview.png" alt="Customer review screenshot" class="review-card">
+                    <img src="images/CustomerReview(3).png" alt="Another customer review" class="review-card">
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact-section">
             <div class="container">
-                <h2>Find & Contact Us</h2>
+                <h2>Visit & Contact Us</h2>
                 <p class="address">
                     Shop No. 03, Plot No. 59, NANDA ENCLAVE<br>
                     Sector 19, Ambarhai Village, Dwarka, New Delhi, Delhi 110075
                 </p>
-                <div class="contact-details">
-                    <a href="https://wa.me/919773634654" class="btn btn-whatsapp" target="_blank">
-                        Message on WhatsApp
-                    </a>
-                    <a href="tel:+919773634654" class="phone-number">097736 34654</a>
+                <div class="contact-methods">
+                    <a href="https://wa.me/919773634654" class="btn btn-whatsapp" target="_blank">Message on WhatsApp</a>
+                    <a href="tel:+919773634654" class="btn btn-primary">Call Directly</a>
                 </div>
             </div>
         </section>
@@ -128,32 +122,30 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.812389146183!2d77.05417087549924!3d28.605378875679545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1af596d67189%3A0x675e0a4f5f992836!2sFamily%20Kitchen!5e0!3m2!1sen!2sin!4v1719379868770!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.812389146183!2d77.05417087549924!3d28.605378875679545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1af596d67189%3A0x675e0a4f5f992836!2sFamily%20Kitchen!5e0!3m2!1sen!2sin!4v1719379868770!5m2!1sen!2sin" title="Google Maps location of Family Kitchen" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="footer-social">
+            <div class="footer-bottom">
                 <a href="https://www.instagram.com/family_kitchen_restaurant" target="_blank">Follow us on Instagram</a>
-            </div>
-            <div class="footer-copyright">
-                © 2025 Family Kitchen. All Rights Reserved.
+                <p class="footer-copyright">© 2025 Family Kitchen. Website by You.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // JavaScript for the mobile hamburger menu
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navMenu = document.querySelector('.nav-menu');
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('.nav-menu');
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
 
-        // Close menu when a link is clicked
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
             });
         });
     </script>
